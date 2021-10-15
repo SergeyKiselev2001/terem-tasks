@@ -21,7 +21,7 @@ $('.first-el__info, .second-el__info').hide();
 
 
  function rotateArrow(isElementPressed){
-    return isElementPressed == true ? {'transform': 'rotateX(180deg)'} : {'transform': 'rotateX(0deg)'};
+    return isElementPressed == true ? {'transform': 'scaleX(0.77) scaleY(1.22) rotateX(180deg) translateY(2px)'} : {'transform': 'scaleX(0.77) scaleY(1.22) rotateX(0deg)'};
  }
 
 

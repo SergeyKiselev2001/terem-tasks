@@ -18,7 +18,7 @@
             <img class="promo" src="./pictures/header_picture.jpg" alt="promo">
             
            
-            <form class="registration" action="#">
+            <form class="registration" method="post" action="#">
                     <h2 class="registration-title">Регистрация сертификата</h2>
                     <h3 class="registration-info">Для регистрации сертификата - введите код сертификата и ваши контактные данные.</h3>
                     <input name="certificateCode" type="text" placeholder="Код сертификата">
@@ -36,7 +36,7 @@
 
             <div class="qa-section__element qa-section__element_first" id='e1'>
                 <div class="qa-section__element-header first-el__header">
-                    Что дает сертификат? <i class="fas  first-el__i fa-chevron-down"></i>
+                    Что дает сертификат? <img class="first-el__i" src="./pictures/down-chevron.png" alt="arrow">
                 </div>
                 <div class="qa-section__element-info first-el__info">
                     Сертификат даёт право участвовать в акции «Дом в подарок». Номер сертификата является вашим уникальным номером участника. Не забудьте его зарегистрировать на нашем сайте и взять с собой на розыгрыш главного приза 16 декабря 2018 года. Владелец сертификата может принимать участие в розыгрыше только при наличии акта приёмки-передачи строения, подтверждающего окончание строительства
@@ -47,7 +47,7 @@
             
             <div class="qa-section__element" id='e2'>
                 <div class="qa-section__element-header second-el__header">
-                    Где получить сертификат? <i class="fas second-el__i fa-chevron-down"></i>
+                    Где получить сертификат? <img class="first-el__i second-el__i" src="./pictures/down-chevron.png" alt="arrow">
                 </div>
                 <div class="qa-section__element-info second-el__info">
                     Сертификат выдаётся всем клиента строительной компании «Теремъ» во время подписания договора на строительство дома или бани на территории выставочного комплекса компании по адресу: г. Москва, ул. Зеленодольская, вл. 42. Сертификаты выдаются в период с 6 по 19 сентября 2018 года включительно.
@@ -56,22 +56,23 @@
         </div>
 
         <div class="bottom">
-            <p class="bottom__questions">
+            <h2 class="bottom__questions">
                 Если остались вопросы по участию в акции
-            </p>
-            <p class="bottom__leave-phone">
+            </h2>
+            <h3 class="bottom__leave-phone">
                 Оставьте телефонный номер и наши специалисты свяжуться с Вами через 30 секунд.
-            </p>
-            <div class="bottom__callback">
-                <form action="">
-                    <div class="callback__inputs">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="phone" placeholder="+7 (___) ___ __ __">
-                        <button type="submit">Заявка на консультацию</button>
-                    </div>
-                    <p class="callback__checkbox"><input type="checkbox">Я принимаю условия <a href="#">Политики обработки данных</a></p>
-                </form>
-            </div>
+            </h3>
+            
+            <form class="bottom__callback" method="post" action="#">
+                
+                <div class="flex-inputs">
+                    <input name="name" type="text" placeholder="Ваше имя">
+                    <input name="phone" type="tel" placeholder="+7 (___) ___ __ __">
+                    <button type="submit">Заявка на консультацию</button>
+                </div>
+                <h3 class="callback__checkbox"><input name="isAgree" type="checkbox">Я принимаю условия <a href="#">Политики обработки данных</a></h3>
+            </form>
+            
 
 
 

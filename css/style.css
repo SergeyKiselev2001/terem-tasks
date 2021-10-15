@@ -245,7 +245,7 @@ button {
   padding-left: 33px;
   letter-spacing: 0.055em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   width: 1016px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +255,15 @@ button {
           align-items: center;
   padding-top: 0px;
   font-size: 15px;
+  position: relative;
+}
+
+.first-el__i {
+  position: absolute;
+  -webkit-transform: scaleX(0.77) scaleY(1.22);
+          transform: scaleX(0.77) scaleY(1.22);
+  right: 15px;
+  bottom: 11px;
 }
 
 .qa-section__element-info {
@@ -310,24 +319,26 @@ i {
   padding-left: 33px;
 }
 
-p.bottom__questions {
+.bottom__questions {
   margin: 0px;
-  height: 30px;
+  height: 28px;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 28px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  letter-spacing: -0.035em;
-  margin-bottom: 14px;
+  letter-spacing: -0.07em;
+  margin-bottom: 18px;
 }
 
-p.bottom__leave-phone {
-  font-size: 16px;
+.bottom__leave-phone {
+  font-weight: 100;
+  font-size: 15px;
   margin: 0px;
-  margin-bottom: 53px;
+  margin-bottom: 54px;
+  letter-spacing: 0.05em;
 }
 
-.callback__inputs {
+.flex-inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,44 +346,44 @@ p.bottom__leave-phone {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 9px;
+  width: 1250px;
 }
 
-.callback__inputs input {
-  padding-left: 14px;
-  outline: none;
-  border: 1px solid red;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 3px;
-  border-color: #aaaaaa;
-  padding-top: 3px;
+.flex-inputs button {
+  width: 315px;
+  padding-left: 15px;
+  padding-right: 9px;
+  letter-spacing: -0.01em;
+  margin-bottom: 11px;
 }
 
-.callback__inputs input[type="text"] {
-  width: 452px;
+.bottom__callback input[type=text] {
+  height: 45px;
+  width: 447px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 16px;
   letter-spacing: -0.01em;
+  border-radius: 2px;
+  border: 1px solid #c8c8c8;
+  padding-left: 14px;
+  padding-top: 5px;
 }
 
-.callback__inputs input[type="tel"] {
-  width: 228px;
+.bottom__callback input[type=tel] {
+  height: 45px;
+  width: 224px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-right: 14px;
-  letter-spacing: .17em;
-}
-
-.callback__inputs button {
-  width: 318px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  margin-right: 15px;
+  letter-spacing: 0.18em;
+  border-radius: 2px;
+  border: 1px solid #c8c8c8;
   padding-left: 15px;
+  padding-top: 5px;
 }
 
-.bottom__callback input[type="checkbox"] {
+.bottom__callback input[type=checkbox] {
   height: 18px;
   width: 18px;
   -webkit-box-sizing: border-box;
@@ -382,18 +393,23 @@ p.bottom__leave-phone {
 }
 
 .callback__checkbox {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
+  font-weight: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.085em;
+  font-size: 14px;
 }
 
 .callback__checkbox a {
   margin-left: 3px;
   text-decoration: none;
+  color: #000;
 }
 
 .callback__checkbox a:hover {
